@@ -1,3 +1,35 @@
+function Gameboard() {
+    const rows = 3;
+    const columns = 3;
+    const board = [];
+
+    for (let i = 0; i < rows; i++) {
+        board[i] = [];
+        for (let j = 0; j < columns; j++) {
+            board[i].push(cell());
+        }
+    }
+
+    const getBoard = () => board;
+
+    const placeMark = (row, column, player) => {
+        if (board[row][column] === 0) {
+            board[row][column].addMark(player);
+        }
+    };
+
+    const printBoard = () => {
+        const boardValues = board.map(row => row.map(column => column.getValue()));
+        console.log(boardValues);
+    };
+
+    return {
+        getBoard,
+        placeMark,
+        printBoard
+    };
+}
+
 function cell() {
     let value = 0;
 
