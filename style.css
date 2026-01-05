@@ -99,6 +99,7 @@ main {
     flex-direction: column;
     align-items: center;
     width: 100%;
+    gap: 10px;
 }
 
 div.input {
@@ -116,4 +117,16 @@ input {
 
 input:focus {
     outline: none;
+}
+
+.game-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width: 100%;
+    max-width: 65vmin;
+    aspect-ratio: 1;
+    gap: 6px;
+    background-color: white;
+    padding: 6px;
 }
