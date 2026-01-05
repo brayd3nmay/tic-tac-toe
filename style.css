@@ -130,3 +130,6 @@ input:focus {
     padding: 6px;
 }
 
+.cell {
+    background-color: #030E07;
+}
