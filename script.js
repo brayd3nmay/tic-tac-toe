@@ -13,7 +13,7 @@ function Gameboard() {
     const getBoard = () => board;
 
     const placeMark = (row, column, player) => {
-        if (board[row][column] === 0) {
+        if (board[row][column].getValue() === 0) {
             board[row][column].addMark(player);
         }
     };
