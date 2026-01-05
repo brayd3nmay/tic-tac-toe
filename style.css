@@ -83,3 +83,13 @@ h4 {
 .rounded-corners {
     border-radius: var(--radius);
 }
+
+.content-container {
+    width: 100vw;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    padding: 2rem 10rem 1rem 10rem;
+    justify-items: center;
+    gap: 15px;
+}
