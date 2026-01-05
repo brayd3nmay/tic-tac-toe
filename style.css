@@ -3,3 +3,83 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+button, form, dialog {
+    appearance: none;
+    -webkit-appearance: none;
+    font-family: inherit;
+    color: inherit;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+:root {
+    --base-size: 1rem;
+    --ratio: 1.25;
+    --s-sm: calc(var(--base-size) / var(--ratio));
+    --s-h4: calc(var(--base-size) * var(--ratio));
+    --s-h3: calc(var(--s-h4) * var(--ratio));
+    --s-h2: calc(var(--s-h3) * var(--ratio));
+    --s-h1: calc(var(--s-h2) * var(--ratio));
+    --lh-body: 1.6;
+    --lh-subheading: 1.2;
+    --lh-heading: 1.1;
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-semibold: 600;
+    --fw-bold: 700;
+    --radius: 7px;
+    --t-time: 300ms;
+    --t-type: ease-in-out;
+}
+
+body {
+    font-size: var(--base-size);
+    font-weight: var(--fw-regular);
+    line-height: var(--lh-body);
+}
+
+h1 {
+    font-size: var(--s-h1);
+    font-weight: var(--fw-bold);
+    line-height: var(--lh-heading);
+}
+
+h2 {
+    font-size: var(--s-h2);
+    font-weight: var(--fw-bold);
+    line-height: var(--lh-heading);
+}
+
+h3, button.nav, .title, li > button {
+    font-size: var(--s-h3);
+    font-weight: var(--fw-semibold);
+    line-height: var(--lh-subheading);
+}
+
+h4 {
+    font-size: var(--s-h4);
+    font-weight: var(--fw-semibold);
+    line-height: var(--lh-subheading);
+}
+
+.inter {
+    font-family: "inter", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.serif {
+    font-family: "Instrument Serif", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.white {
+    color: white;
+}
+
+.black {
+    color: black;
+}
+
+.rounded-corners {
+    border-radius: var(--radius);
+}
