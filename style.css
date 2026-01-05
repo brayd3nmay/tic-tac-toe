@@ -107,9 +107,11 @@ div.input {
 }
 
 input {
-    border: black solid;
+    border: white solid;
     border-radius: 3px;
     padding: 0.3rem;
+    color: black;
+    background-color: rgb(255, 255, 255, 0.9);
 }
 
 input:focus {
@@ -124,7 +126,7 @@ input:focus {
     max-width: 65vmin;
     aspect-ratio: 1;
     gap: 6px;
-    background-color: rgb(255, 255, 255, 0.8);
+    background-color: rgb(255, 255, 255, 0.9);
     padding: 6px;
 }
 
