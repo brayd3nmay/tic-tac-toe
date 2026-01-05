@@ -11,27 +11,29 @@
     <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1 class="serif">Tic-Tac-Toe</h1>
-    </header>
-    <main>
-        <label for="nameInput" class="inter">Player 1: </label>
-        <input type="text" name="player_name" id="nameInput" required minlength="1" class="inter">
-        <div class="container rounded-corners">
-            <div class="cell" id="r1-c1"></div>
-            <div class="cell" id="r1-c2"></div>
-            <div class="cell" id="r1-c3"></div>
-            <div class="cell" id="r2-c1"></div>
-            <div class="cell" id="r2-c2"></div>
-            <div class="cell" id="r2-c3"></div>
-            <div class="cell" id="r3-c1"></div>
-            <div class="cell" id="r3-c2"></div>
-            <div class="cell" id="r3-c3"></div>
-        </div>
-    </main>
-    <footer class="serif">
-        <p>Made by Brayden.</p>
-        <p><a href="https://github.com/brayd3nmay/tic-tac-toe" target="_blank">GitHub Repo</a></p>
-    </footer>
+    <div class="content-container">
+        <header>
+            <h1 class="serif">Tic-Tac-Toe</h1>
+        </header>
+        <main>
+            <label for="nameInput" class="inter">Player 1: </label>
+            <input type="text" name="player_name" id="nameInput" required minlength="1" class="inter">
+            <div class="game-container rounded-corners">
+                <div class="cell" id="r1-c1"></div>
+                <div class="cell" id="r1-c2"></div>
+                <div class="cell" id="r1-c3"></div>
+                <div class="cell" id="r2-c1"></div>
+                <div class="cell" id="r2-c2"></div>
+                <div class="cell" id="r2-c3"></div>
+                <div class="cell" id="r3-c1"></div>
+                <div class="cell" id="r3-c2"></div>
+                <div class="cell" id="r3-c3"></div>
+            </div>
+        </main>
+        <footer class="serif">
+            <p>Made by Brayden.</p>
+            <p><a href="https://github.com/brayd3nmay/tic-tac-toe" target="_blank">GitHub Repo</a></p>
+        </footer>
+    </div>
 </body>
 </html>
