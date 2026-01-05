@@ -6,7 +6,7 @@ function Gameboard() {
     for (let i = 0; i < rows; i++) {
         board[i] = [];
         for (let j = 0; j < columns; j++) {
-            board[i].push(cell());
+            board[i].push(Cell());
         }
     }
 
@@ -30,7 +30,7 @@ function Gameboard() {
     };
 }
 
-function cell() {
+function Cell() {
     let value = 0;
 
     const addMark = (player) => {
@@ -44,3 +44,4 @@ function cell() {
         getValue
     };
 }
+
