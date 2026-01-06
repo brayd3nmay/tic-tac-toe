@@ -133,3 +133,8 @@ input:focus {
 .cell {
     background-color: #030E07;
 }
+
+svg {
+    width: 80%;
+    height: 80%;
+}
